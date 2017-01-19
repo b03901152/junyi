@@ -1,0 +1,6 @@
+[submodule "redux"]
+	path = redux
+	url = https://github.com/b03901152/redux.git
+[submodule "GAE_book_ticket/redux"]
+	path = GAE_book_ticket/redux
+	url = https://github.com/b03901152/redux.git
