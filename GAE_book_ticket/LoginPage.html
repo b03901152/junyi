@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+  <head>
+    <title>Login Page</title>
+    <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap.css">
+    <link type="text/css" rel="stylesheet" href="/bootstrap/css/bootstrap-responsive.css">
+    <!-- [END css] -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style type="text/css">
+      .margin{
+        margin: 2em;
+      }
+      #inputs{
+        height: 2.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container margin">
+        <form class="form-horizontal" action="/login" method="post">
+          <div class="form-group">
+            <label class="control-label col-sm-2" >Name:</label>
+            <div class="col-sm-5"> 
+              <input type="text" class="form-control" placeholder="" id="inputs" value={{name}}/>
+            </div>
+          </div>
+          <div class="form-group">
+            <label class="control-label col-sm-2">Email:</label>
+            <div class="col-sm-5"> 
+              <input type="text" class="form-control" id="inputs" placeholder="xxx@ntu.edu.tw" value={{email}}/>
+            </div>
+          </div>
+          <div class="col-sm-offset-2 col-sm-5">
+            <button type="submit" class="btn btn-default">Submit</button>
+          </div>
+        </form>
+      </div>
+  </body>
+</html>
+{% endautoescape %}
